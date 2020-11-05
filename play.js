@@ -2,7 +2,8 @@ const { connect } = require("./client");
 const { setupInput } = require("./input");
 
 console.log("you ded cuz you idled");
-connect();
+// connect();
+setupInput(connect());
 
 /**
  * Setup User Interface
