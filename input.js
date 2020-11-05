@@ -1,3 +1,5 @@
+const { connect } = require("./client");
+
 let connection;
 
 const setupInput = function (conn) {
@@ -13,6 +15,7 @@ const setupInput = function (conn) {
 };
 
 const handleUserInput = function (key) {
+  connection.write("Say: ssssss");
   if (key === "w") {
     connection.write("Move: up");
   } else if (key === "a") {
@@ -25,7 +28,5 @@ const handleUserInput = function (key) {
     process.exit();
   }
 };
-
-setupInput();
 
 module.exports = { setupInput };
