@@ -1,5 +1,4 @@
+const { connect } = require("./client");
 
-const { connect } = require('./client');
-
-console.log('you ded cuz you idled');
+console.log("you ded cuz you idled");
 connect();
